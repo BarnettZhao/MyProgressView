@@ -33,28 +33,6 @@ public class ProgressView extends ImageView {
 	}
 
 	@Override
-	protected void onAttachedToWindow() {
-		super.onAttachedToWindow();
-		startAnim();
-
-	}
-
-	@Override
-	protected void onDetachedFromWindow() {
-		super.onDetachedFromWindow();
-		stopAnim();
-	}
-	@Override
-	protected void onVisibilityChanged(View changedView, int visibility) {
-		super.onVisibilityChanged(changedView, visibility);
-		if (VISIBLE == visibility) {
-			startAnim();
-		} else {
-			stopAnim();
-		}
-	}
-
-	@Override
 	public void setVisibility(int visibility) {
 		if (getVisibility() != visibility) {
 			super.setVisibility(visibility);
