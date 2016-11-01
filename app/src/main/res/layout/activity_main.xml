@@ -11,8 +11,19 @@
 	android:paddingTop="@dimen/activity_vertical_margin"
 	tools:context="com.example.zhaoweiwei.myprogressview.MainActivity">
 
-	<TextView
+	<com.example.zhaoweiwei.myprogressview.ProgressView
+		android:id="@+id/progressview"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"/>
+		android:layout_centerInParent="true"
+		android:visibility="gone"
+		android:background="@drawable/progress_animation"/>
+
+	<Button
+		android:id="@+id/button_progressview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/progressview"
+		android:layout_centerInParent="true"
+		android:text="开始加载"/>
 </RelativeLayout>
